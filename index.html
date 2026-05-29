@@ -1,0 +1,564 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>PaleoFX Legacy | Health Optimisation Summit Austin 2027</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#ccc1e5",
+                    "error": "#ffb4ab",
+                    "on-primary-fixed": "#1e1732",
+                    "on-tertiary-fixed-variant": "#0f5300",
+                    "inverse-on-surface": "#2f3131",
+                    "on-surface-variant": "#cac5ce",
+                    "surface-variant": "#333535",
+                    "on-tertiary": "#083900",
+                    "error-container": "#93000a",
+                    "surface-container-lowest": "#0c0f0f",
+                    "on-primary": "#332c48",
+                    "cta-orange-hover": "#E5652F",
+                    "inverse-surface": "#e2e2e2",
+                    "tertiary-container": "#032000",
+                    "dark-text": "#170E2D",
+                    "primary-fixed": "#e8ddff",
+                    "on-secondary": "#3b2068",
+                    "on-secondary-container": "#c4a7f8",
+                    "on-background": "#e2e2e2",
+                    "on-error": "#690005",
+                    "primary-fixed-dim": "#ccc1e5",
+                    "on-tertiary-container": "#3c9525",
+                    "on-primary-fixed-variant": "#4a4260",
+                    "inverse-primary": "#625a79",
+                    "surface-container-low": "#1a1c1c",
+                    "secondary-fixed": "#ebdcff",
+                    "on-tertiary-fixed": "#032100",
+                    "secondary": "#d4bbff",
+                    "on-secondary-fixed": "#250553",
+                    "surface": "#121414",
+                    "outline": "#938f97",
+                    "on-error-container": "#ffdad6",
+                    "background": "#121414",
+                    "secondary-container": "#523881",
+                    "surface-container-high": "#282a2b",
+                    "surface-dim": "#121414",
+                    "tertiary-fixed": "#9bf97c",
+                    "secondary-fixed-dim": "#d4bbff",
+                    "surface-container-highest": "#333535",
+                    "on-surface": "#e2e2e2",
+                    "cta-orange": "#CB5A28",
+                    "on-primary-container": "#877e9f",
+                    "tertiary": "#80dc63",
+                    "on-secondary-fixed-variant": "#523881",
+                    "outline-variant": "#48454d",
+                    "surface-container": "#1e2020",
+                    "tertiary-fixed-dim": "#80dc63",
+                    "surface-bright": "#38393a",
+                    "primary": "#ccc1e5",
+                    "primary-container": "#1d1631"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "max-container": "1100px",
+                    "section-v-mobile": "80px",
+                    "gutter": "24px",
+                    "max-text-width": "700px",
+                    "section-v-desktop": "120px"
+            },
+            "fontFamily": {
+                    "headline-h2-mobile": ["Raleway"],
+                    "headline-h1-mobile": ["Raleway"],
+                    "button-text": ["Raleway"],
+                    "headline-h1": ["Raleway"],
+                    "body-lg": ["Raleway"],
+                    "label-caps": ["Raleway"],
+                    "headline-h2": ["Raleway"],
+                    "body-sm": ["Raleway"]
+            },
+            "fontSize": {
+                    "headline-h2-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-h1-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "button-text": ["16px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "headline-h1": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["14px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "headline-h2": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-sm": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style class="">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .cta-primary {
+            background-color: #CB5A28;
+            border: 3px solid #E5652F;
+            transition: all 0.3s ease;
+        }
+        .cta-primary:hover {
+            background-color: #E5652F;
+            transform: translateY(-2px);
+        }
+        .cta-secondary {
+            background-color: transparent;
+            border: 3px solid #ffffff;
+            transition: all 0.3s ease;
+        }
+        .cta-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .speaker-card-shadow {
+            box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes pulse-subtle {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .animate-pulse-subtle {
+            animation: pulse-subtle 4s ease-in-out infinite;
+        }
+        .ecosystem-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            aspect-ratio: 1 / 1;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hub-center {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            background: radial-gradient(circle, rgba(97, 187, 71, 0.2) 0%, rgba(29, 22, 49, 1) 100%);
+            border: 2px solid #61BB47;
+            box-shadow: 0 0 30px rgba(97, 187, 71, 0.3);
+            z-index: 10;
+        }
+        .orbit-item {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 20;
+        }
+        .badge-circle {
+            width: 100%;
+            height: 100%;
+            background: rgba(29, 22, 49, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(97, 187, 71, 0.4);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        .svg-connections {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 5;
+        }
+        
+        .orbit-0 { transform: translate(0, -280px); }
+        .orbit-1 { transform: translate(198px, -198px); }
+        .orbit-2 { transform: translate(280px, 0); }
+        .orbit-3 { transform: translate(198px, 198px); }
+        .orbit-4 { transform: translate(0, 280px); }
+        .orbit-5 { transform: translate(-198px, 198px); }
+        .orbit-6 { transform: translate(-280px, 0); }
+        .orbit-7 { transform: translate(-198px, -198px); }
+
+        @media (max-width: 768px) {
+            .ecosystem-container {
+                max-width: 100%;
+                aspect-ratio: auto;
+                min-height: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                padding: 0;
+                margin-top: 2rem;
+            }
+            .orbit-item {
+                width: 100%;
+                height: auto;
+                position: relative;
+                transform: none !important;
+                margin: 0;
+            }
+            .badge-circle {
+                border-radius: 0.5rem;
+                flex-direction: row;
+                gap: 1rem;
+                justify-content: flex-start;
+                padding: 1.25rem;
+            }
+            .hub-center {
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding: 2rem;
+                border-radius: 0.5rem;
+                margin-bottom: 2rem;
+                background: rgba(97, 187, 71, 0.1);
+            }
+            .svg-connections {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-sm selection:bg-cta-orange selection:text-white">
+<!-- Top Navigation -->
+<header class="bg-background/90 dark:bg-background/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant dark:border-outline-variant">
+<div class="flex justify-between items-center h-20 max-w-container mx-auto px-gutter">
+<div class="font-headline-h1-mobile text-headline-h1-mobile text-on-background dark:text-on-background"><img alt="PaleoFX Logo" class="w-[180px] h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGWo2FNnZJK8LBwG9pkN9oz8H3diTeeWn0DVWl9XnurHknykMMNHdGOJHGwU_oZs9dAjUbcgB5XAp-39roo2yxDs0riuhPRQf3ieFW5J1gtabvYi8kosemIf2CV-qWVxrot4-39qkWp8Ni_PCXhDuc8zInZxtbpeHNu6TOMo2ZfRpJYggrULa_B3XbYcYLQTFGM2J3a5rJAqp_6KFexEFwzi9Mw8hDuZbQp8S3YB7XRZeGPvKr-Rb3qX3dMd5fJD3I5xjn9ZTE_LpRwA"></div>
+<nav class="flex gap-2 md:gap-8 items-center"><button class="cta-secondary font-button-text text-[10px] md:text-button-text text-white px-3 md:px-6 py-2 md:py-3 rounded-none uppercase">
+  APPLY TO EXHIBIT
+</button>
+<button class="cta-primary font-button-text text-[10px] md:text-button-text text-white px-3 md:px-6 py-2 md:py-3 rounded-none uppercase">
+  GET TICKETS
+</button></nav>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative flex items-center overflow-hidden py-section-v-mobile md:py-section-v-desktop min-h-[60vh]">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-[#1D1631]/80 z-10 transition-all duration-1000 opacity-100 translate-y-0"></div>
+<img class="w-full h-full object-cover" data-alt="A grand, high-contrast cinematic shot of a massive conference hall during a human performance summit. The stage is bathed in deep purple and indigo lighting with sharp spotlights cutting through atmospheric haze. A silhouetted audience sits in rapt attention while a professional speaker stands center stage before a large digital screen displaying biometric data. The overall mood is authoritative, futuristic, and prestigious." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW1uON_bC3Ew_U3E3MxquqU4-GWfjMGWDh3eiOF0lzX6WCXAYgOtY6R8MMSh2IHOHlYw6xNpDRqzZvfVEmoxxfeANeH3UnFjpEQJ7MHKMQTrSNSWwg-uojiWEMH3mVwO42CQsU-h6eM4qeB1Q4sU-h6eM4qeB1Q4sL8np62oVq_8qtyfIO-HFPQwhzRgibmnMwP-i1nnJnB9ttSVncbFgKrNPibAQBPUAx3GTiGhRkkcuOFDnnpH1F5v-Pmmah497zrKc7_FR9_Rg77CciSV8C72tIU">
+</div>
+<div class="relative z-20 max-w-container mx-auto px-gutter">
+<div class="max-w-text-width transition-all duration-1000 opacity-100 translate-y-0">
+<span class="font-label-caps text-label-caps text-tertiary mb-6 block uppercase tracking-[0.2em]">Continuing the Mission</span>
+<h1 class="font-headline-h1 text-headline-h1-mobile md:text-headline-h1 text-white mb-8">
+                        The Spirit of PaleoFX Lives On
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">
+                        For years, PaleoFX brought together the world’s leading voices in health and performance. Today, that mission continues at Health Optimisation Summit Austin 2027—a new sanctuary for ancestral wisdom and longevity science.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="cta-primary font-button-text text-button-text text-white px-8 py-4 rounded-none uppercase text-center">
+                            GET AUSTIN 2027 TICKETS
+                        </button>
+<button class="cta-secondary font-button-text text-button-text text-white px-8 py-4 rounded-none uppercase text-center">
+                            VIEW SPEAKERS
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Legacy Section -->
+<section class="bg-white text-dark-text py-section-v-mobile md:py-section-v-desktop">
+<div class="max-w-container mx-auto px-gutter">
+<div class="grid md:grid-cols-2 gap-16 items-center transition-all duration-1000 opacity-100 translate-y-0"><div class="flex flex-col md:grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+<div class="order-2 md:order-1">
+<h2 class="font-headline-h2 text-headline-h2-mobile md:text-headline-h2 mb-8">
+                            A Legacy That Changed Health Events
+                        </h2>
+<div class="w-16 h-1 bg-cta-orange mb-8"></div>
+<p class="font-body-lg text-body-lg text-dark-text/80 mb-6">
+                            PaleoFX helped shape the modern movement of ancestral health and biohacking. It was more than a conference; it was a global gathering of disruptors committed to human flourishing.
+                        </p>
+<p class="font-body-lg text-body-lg text-dark-text/80">
+                            While PaleoFX is no longer active, the community’s passion continues to grow. We invite the PaleoFX tribe to join us in Austin this year for the most comprehensive health event ever staged.
+                        </p>
+</div>
+<div class="order-1 md:order-2 flex justify-center p-8 bg-surface-container-lowest rounded-xl aspect-square w-full h-[300px] md:h-[450px] items-center">
+<img alt="Legacy Background Logo" class="max-w-full h-auto opacity-20 filter grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGWo2FNnZJK8LBwG9pkN9oz8H3diTeeWn0DVWl9XnurHknykMMNHdGOJHGwU_oZs9dAjUbcgB5XAp-39roo2yxDs0riuhPRQf3ieFW5J1gtabvYi8kosemIf2CV-qWVxrot4-39qkWp8Ni_PCXhDuc8zInZxtbpeHNu6TOMo2ZfRpJYggrULa_B3XbYcYLQTFGM2J3a5rJAqp_6KFexEFwzi9Mw8hDuZbQp8S3YB7XRZeGPvKr-Rb3qX3dMd5fJD3I5xjn9ZTE_LpRwA">
+</div>
+</div></div>
+</div>
+</section>
+<!-- Holistic Health Ecosystem Diagram Section -->
+<section class="bg-[#1D1631] py-section-v-mobile md:py-section-v-desktop overflow-hidden">
+<div class="max-w-container mx-auto px-gutter">
+<div class="max-w-text-width mx-auto text-center mb-16 transition-all duration-1000 opacity-100 translate-y-0">
+<h2 class="font-headline-h2 text-headline-h2-mobile md:text-headline-h2 text-white mb-6">
+                        Holistic Health Ecosystem
+                    </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Our mission is built on the interconnectedness of human biology. Every topic orbits a single goal: total human optimisation.
+                    </p>
+</div>
+<!-- Diagram Container -->
+<div class="ecosystem-container transition-all duration-1000 opacity-100 translate-y-0 mt-20 mb-20 md:mt-0 md:mb-0">
+<svg class="svg-connections" viewBox="0 0 800 800">
+<g stroke="#61BB47" stroke-opacity="0.6" stroke-width="1.5">
+<line x1="400" x2="400" y1="310" y2="180"></line>
+<line x1="464" x2="541" y1="336" y2="259"></line>
+<line x1="490" x2="620" y1="400" y2="400"></line>
+<line x1="464" x2="541" y1="464" y2="541"></line>
+<line x1="400" x2="400" y1="490" y2="620"></line>
+<line x1="336" x2="259" y1="464" y2="541"></line>
+<line x1="310" x2="180" y1="400" y2="400"></line>
+<line x1="336" x2="259" y1="336" y2="259"></line>
+</g>
+</svg>
+<div class="hub-center rounded-full flex flex-col items-center justify-center p-4 text-center border-2 animate-pulse-subtle">
+<span class="font-label-caps text-[10px] text-tertiary mb-2 uppercase tracking-widest">The Core</span>
+<span class="font-headline-h2-mobile text-[16px] md:text-[20px] text-white leading-tight uppercase font-bold">Human Optimisation</span>
+</div>
+<div class="orbit-item orbit-0 group">
+<div class="badge-circle rounded-full animate-pulse-subtle">
+<span class="material-symbols-outlined text-[#61BB47] md:mb-2 scale-110">energy_savings_leaf</span>
+<span class="font-label-caps text-[11px] text-white uppercase font-bold">Longevity</span>
+</div>
+</div>
+<div class="orbit-item orbit-1 group">
+<div class="badge-circle rounded-full" style="animation-delay: 0.5s">
+<span class="material-symbols-outlined text-[#61BB47] md:mb-2 scale-110">medical_services</span>
+<span class="font-label-caps text-[11px] text-white uppercase font-bold text-center">Functional Med</span>
+</div>
+</div>
+<div class="orbit-item orbit-2 group">
+<div class="badge-circle rounded-full" style="animation-delay: 1s">
+<span class="material-symbols-outlined text-[#61BB47] md:mb-2 scale-110">monitoring</span>
+<span class="font-label-caps text-[11px] text-white uppercase font-bold">Metabolic</span>
+</div>
+</div>
+<div class="orbit-item orbit-3 group">
+<div class="badge-circle rounded-full" style="animation-delay: 1.5s">
+<span class="material-symbols-outlined text-[#61BB47] md:mb-2 scale-110">nutrition</span>
+<span class="font-label-caps text-[11px] text-white uppercase font-bold">Nutrition</span>
+</div>
+</div>
+<div class="orbit-item orbit-4 group">
+<div class="badge-circle rounded-full" style="animation-delay: 2s">
+<span class="material-symbols-outlined text-[#61BB47] md:mb-2 scale-110">sprint</span>
+<span class="font-label-caps text-[11px] text-white uppercase font-bold">Performance</span>
+</div>
+</div>
+<div class="orbit-item orbit-5 group">
+<div class="badge-circle rounded-full" style="animation-delay: 2.5s">
+<span class="material-symbols-outlined text-[#61BB47] md:mb-2 scale-110">bedtime</span>
+<span class="font-label-caps text-[11px] text-white uppercase font-bold">Recovery</span>
+</div>
+</div>
+<div class="orbit-item orbit-6 group">
+<div class="badge-circle rounded-full" style="animation-delay: 3s">
+<span class="material-symbols-outlined text-[#61BB47] md:mb-2 scale-110">biotech</span>
+<span class="font-label-caps text-[11px] text-white uppercase font-bold">Biohacking</span>
+</div>
+</div>
+<div class="orbit-item orbit-7 group">
+<div class="badge-circle rounded-full" style="animation-delay: 3.5s">
+<span class="material-symbols-outlined text-[#61BB47] md:mb-2 scale-110">shield</span>
+<span class="font-label-caps text-[11px] text-white uppercase font-bold text-center">Preventative</span>
+</div>
+</div></div>
+</div>
+</section>
+<!-- Why Attend Section -->
+<section class="bg-white py-section-v-mobile md:py-section-v-desktop">
+<div class="max-w-container mx-auto px-gutter">
+<div class="grid md:grid-cols-3 gap-12 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="text-center group transition-all duration-1000 opacity-100 translate-y-0">
+<img alt="Speakers Icon" class="w-16 h-16 mx-auto mb-6 group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0M775_29W6P1S2V5e4K-Z_08q-98W3f1vL9G8O1k-N9W3f1vL9G8O1k-N9W3f1vL9G8O1k-N9W3f1vL9G8O1k-N9W3f1vL9G8O1k-N">
+<h3 class="font-headline-h2-mobile text-headline-h2-mobile text-dark-text mb-4">World-Class Speakers</h3>
+<p class="font-body-sm text-body-sm text-dark-text/70">
+                            Learn from over 100+ global experts in clinical nutrition, functional medicine, and human performance optimization.
+                        </p>
+</div>
+<div class="text-center group transition-all duration-1000 opacity-100 translate-y-0">
+<img alt="Strategies Icon" class="w-16 h-16 mx-auto mb-6 group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0M775_29W6P1S2V5e4K-Z_08q-98W3f1vL9G8O1k-N9W3f1vL9G8O1k-N9W3f1vL9G8O1k-N9W3f1vL9G8O1k-N9W3f1vL9G8O1k-N">
+<h3 class="font-headline-h2-mobile text-headline-h2-mobile text-dark-text mb-4">Practical Strategies</h3>
+<p class="font-body-sm text-body-sm text-dark-text/70">
+                            Walk away with actionable blueprints for metabolic flexibility, mental clarity, and biological age reversal.
+                        </p>
+</div>
+<div class="text-center group transition-all duration-1000 opacity-100 translate-y-0">
+<img alt="Community Icon" class="w-16 h-16 mx-auto mb-6 group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0M775_29W6P1S2V5e4K-Z_08q-98W3f1vL9G8O1k-N9W3f1vL9G8O1k-N9W3f1vL9G8O1k-N9W3f1vL9G8O1k-N9W3f1vL9G8O1k-N">
+<h3 class="font-headline-h2-mobile text-headline-h2-mobile text-dark-text mb-4">Global Community</h3>
+<p class="font-body-sm text-body-sm text-dark-text/70">
+                            Connect with thousands of like-minded health seekers, practitioners, and biohackers in the heart of Austin.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof Metrics -->
+<section class="bg-surface-container-high py-20">
+<div class="max-w-container mx-auto px-gutter">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="text-center">
+<div class="font-headline-h1 text-headline-h2 text-primary mb-2">1,000+</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase">Attendees</div>
+</div>
+<div class="text-center">
+<div class="font-headline-h1 text-headline-h2 text-primary mb-2">100+</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase">Expert Speakers</div>
+</div>
+<div class="text-center">
+<div class="font-headline-h1 text-headline-h2 text-primary mb-2">50+</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase">Biohacking Labs</div>
+</div>
+<div class="text-center">
+<div class="font-headline-h1 text-headline-h2 text-primary mb-2">3</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase">Immersive Days</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Speakers Section -->
+<section class="bg-background py-section-v-mobile md:py-section-v-desktop overflow-hidden">
+<div class="max-w-container mx-auto px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 transition-all duration-1000 opacity-100 translate-y-0">
+<div>
+<span class="font-label-caps text-label-caps text-cta-orange mb-4 block uppercase">The Lineup</span>
+<h2 class="font-headline-h2 text-headline-h2-mobile md:text-headline-h2 text-white">Meet the Experts</h2>
+</div>
+<a class="text-primary hover:text-white transition-colors flex items-center gap-2 group" href="#">
+<span class="font-label-caps text-label-caps">View Full Speaker List</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward"></span>
+</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 transition-all duration-1000 opacity-100 translate-y-0">
+<!-- Speaker Card 1 -->
+<div class="text-center group transition-all duration-1000 opacity-100 translate-y-0">
+<div class="relative mb-6">
+<div class="absolute inset-0 bg-cta-orange/20 rounded-full scale-0 group-hover:scale-105 transition-transform duration-500"></div>
+<img class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mx-auto speaker-card-shadow relative z-10 transition-all duration-500 group-hover:scale-[0.98]" data-alt="A professional headshot of a mature, authoritative male doctor with kind eyes and a groomed beard. He is wearing a minimalist dark shirt, appearing modern and professional against a neutral, high-key studio background. The lighting is soft and flattering, emphasizing expertise and trustworthiness in a high-end health and wellness context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA11CfVaJ2No7HgARdBtt7hCcYeyQYLaBi_M95aoCEgAyoCu3Pf3losZin5TrrPgHVhhYaNre-UxuIGQqRM_IisJxQa-2j71pTvLW0Ucm-gh0aBHh2Y9-1r9TYT9EsNLxvFGsjGjO50a5cLRXm_dslO9mZRvoEzpEDldgtWaxgYcJ_0uZm9GubIFuaP7V998R5n4KdArLgkk5GTNlf4V30FGtIajoEfBNE48E0EVpNDlMsjdxQn7hFKkP598RQx1wvwyhlXwSpgusI">
+</div>
+<h4 class="font-headline-h2-mobile text-[20px] text-white mb-1">Dr. Michael Chen</h4>
+<p class="font-label-caps text-[12px] text-tertiary">Functional Neurology</p>
+</div>
+<!-- Speaker Card 2 -->
+<div class="text-center group transition-all duration-1000 opacity-100 translate-y-0">
+<div class="relative mb-6">
+<div class="absolute inset-0 bg-cta-orange/20 rounded-full scale-0 group-hover:scale-105 transition-transform duration-500"></div>
+<img class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mx-auto speaker-card-shadow relative z-10 transition-all duration-500 group-hover:scale-[0.98]" data-alt="A professional portrait of an energetic female performance coach in her late 30s. She has a confident smile and athletic posture, wearing high-quality dark athletic apparel. The background is a slightly out-of-focus modern training facility with clean lines and premium equipment. The image exudes high-performance health and focused determination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVEU84nJfEvDI4fp8u8M_Ws7l_Ckm0YnP2vKATrMlp4WlKDoj0dezLw-S-QBN6mO7_Lpn5PxqYcsICtWXOQ06-djkmBHlWataebnlIkFCPolLu52XAk7cD_VwZA1bRq9l8YnJnu5L_LIuqagqofrH15twd7x0FIbfbwR9I2TQ7lnctuH6fhkEwX1dwuWm59UWH0IrORPlZYl2Q5fTLSUdv2IRjom0SUm28zg7jRJWKkdUPQlUU_velyN3djtMhHpmcig_C7N9kHpE">
+</div>
+<h4 class="font-headline-h2-mobile text-[20px] text-white mb-1">Sarah Williams</h4>
+<p class="font-label-caps text-[12px] text-tertiary">Human Performance</p>
+</div>
+<!-- Speaker Card 3 -->
+<div class="text-center group transition-all duration-1000 opacity-100 translate-y-0">
+<div class="relative mb-6">
+<div class="absolute inset-0 bg-cta-orange/20 rounded-full scale-0 group-hover:scale-105 transition-transform duration-500"></div>
+<img class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mx-auto speaker-card-shadow relative z-10 transition-all duration-500 group-hover:scale-[0.98]" data-alt="A headshot of a scholarly male research scientist wearing a crisp white dress shirt and glasses. He has a serious yet approachable expression, symbolizing deep academic knowledge and high-trust medical science. The background is minimalist and brightly lit, conveying a sense of clarity, precision, and innovative laboratory research." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-6gU-DD2rDUxiUWfBrHbETqD-1eT1q9srfYdiwcXretfua7DoHox6zivS1t_fvdS_xeXblvVWanlxOc8F-5RpzmfJbKBsEdmaDXxecK5bvoxQpVxAiTAeGm_ypCAYtoloQc2VlJNKz2gzskZexriH0VzkuvidRXhafhqS_0qSlglB05bgCFbV0s-KV3acL2VO3SBBi6q1BHR3MxQCNQs4yNX35BuakXYaxVdIYasJOj113k0BEiyc1R_ypQWtssp-mpeOANhmNiQ">
+</div>
+<h4 class="font-headline-h2-mobile text-[20px] text-white mb-1">Prof. James Aris</h4>
+<p class="font-label-caps text-[12px] text-tertiary">Longevity Genetics</p>
+</div>
+<!-- Speaker Card 4 -->
+<div class="text-center group transition-all duration-1000 opacity-100 translate-y-0">
+<div class="relative mb-6">
+<div class="absolute inset-0 bg-cta-orange/20 rounded-full scale-0 group-hover:scale-105 transition-transform duration-500"></div>
+<img class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mx-auto speaker-card-shadow relative z-10 transition-all duration-500 group-hover:scale-[0.98]" data-alt="A professional headshot of a radiant female nutritionist in her 40s. She is dressed in a sophisticated neutral-toned blazer. Her expression is warm and welcoming, set against a clean, modern lifestyle background with soft, natural lighting. The overall aesthetic is grounded, healthy, and highly professional, blending modern medical expertise with holistic wellness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC51Qtj2ubZX0itqrPQGYaGayNZ1-tk8HXWGfjHj_6r-Vd1sSnn0vwzW0IR7SwYwljyJQtR-6t_kKVin_26SN3iSpwzYJUclt6Zd8N_xkPUYPuZ_GNHmIeKmwNCoOX8UB4BpL2mhrvgdAeS4AG2qv0JvklbBYL0x8tkkDRPrBznTUB84v8sQwKr40dIC3_5HKRcG8Dd-2Qz7ZZHy2fyvKhbvJC0ZoUFjylZIuhhCzrBhPsGs8kqYR8Es9lajnHxnwimHuwpSNJbSXY">
+</div>
+<h4 class="font-headline-h2-mobile text-[20px] text-white mb-1">Dr. Elena Rossi</h4>
+<p class="font-label-caps text-[12px] text-tertiary">Metabolic Science</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="relative py-section-v-mobile md:py-section-v-desktop overflow-hidden min-h-[60vh]">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-primary-container/95 z-10 transition-all duration-1000 opacity-100 translate-y-0"></div>
+<img class="w-full h-full object-cover" data-alt="A wide cinematic shot of a sunset over the Austin, Texas skyline from a high vantage point. The sky is filled with vibrant oranges, deep purples, and soft pinks. The modern architectural silhouettes of the city stand bold against the dusk horizon. The mood is hopeful, expansive, and representative of the 'next chapter' for the health optimisation community in this new city." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsnR0GVHC64DlCCT_QxrzpyVMkaZYIgzzCiPwIXI9RJgc1p4enrSQV-WnCymkUzLfSEtJ3FglfUuaKpOZr54k5m-grlhtffBC0DQkAnWuFxuWUPwmBu6giDHzXmGbwkNwI_JxPkZWdUqu7nWE61CocLVM4NL6rUH_fFQOAC79kkYAs6Q22oA9v6tx824m4qUPr2rRAZ4JEiDWgf04gHGGoTcERyE6hZ-mQrAk-SUoSbexOyLbsovWyvAl78H0B2mwNGNAPw0vJ0OM">
+</div>
+<div class="relative z-20 max-w-container mx-auto px-gutter text-center">
+<h2 class="font-headline-h1 text-headline-h2-mobile md:text-headline-h2 text-white mb-8">
+                    Ready For The Next Chapter?
+                </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-text-width mx-auto mb-12">
+                    Join the legacy. Secure your place at the world's most innovative health summit and continue your journey toward total human optimisation.
+                </p>
+<button class="cta-primary font-button-text text-button-text text-white px-12 py-5 rounded-none uppercase text-lg shadow-xl">
+                    SECURE YOUR TICKET
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant">
+<div class="max-w-container mx-auto px-gutter py-section-v-desktop flex flex-col items-center text-center gap-8">
+<div class="font-headline-h2-mobile text-headline-h2-mobile text-on-surface dark:text-on-surface"><img alt="PaleoFX Logo" class="w-[220px] h-auto object-contain mx-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASrmHp1Hf6qzIhNwjbYExZLKXVFkFTjtPG5mYi42Dej5Fbm4Ht8atbwHZolR8Uy9NxtWSY6JslmLiA4EECk3soTdTn4KBdDRlpjorLBGUWrfWREZbxq0c_sUsU3v7NUGwXCMR_Hkg6kqwEerZMuC00-4g1hK6Nfa9o3IcPzKe-IXLGs-ypLmIpUqhbhNtQgWNNlf-UR9mCYq0sTW-SozEkQvZ5dAOFYL0kRN6y2xRHkSEsVUA5nGr2ls1NQ37YFFQVoNcEW_HQHg2LAA"></div>
+<nav class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-cta-orange transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-cta-orange transition-colors" href="#">Terms of Service</a>
+</nav>
+<div class="flex gap-6 mt-4">
+<a class="text-on-surface-variant hover:text-cta-orange transition-colors" href="#">
+</a>
+<a class="text-on-surface-variant hover:text-cta-orange transition-colors" href="#">
+</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant/60 mt-4">
+                © 2027 Paleo f(x)™.
+            </p>
+<div class="max-w-[700px] mx-auto mt-8 flex flex-col gap-6">
+  <p class="font-body-sm text-body-sm text-on-surface-variant/60 leading-relaxed">
+    Paleo f(x)™ is not affiliated in any way with Health Optimisation Summit LTD. Any promotion of the event is part of an affiliate program from which I will earn a commission if you go on to purchase a ticket to the event.
+  </p>
+  <p class="font-label-caps text-[12px] text-on-surface-variant/60 uppercase">
+    11601 West Hwy 290 Suite A101-349, Austin, TX, United States, 78737
+  </p>
+</div></div>
+</footer>
+<script>
+        // Subtle entrance animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-8');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Add classes for observation
+            const animateElements = document.querySelectorAll('section > div > div, .ecosystem-container, .text-center.group');
+            animateElements.forEach(el => {
+                el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
+                observer.observe(el);
+            });
+        });
+    </script>
+
+
+
+
+
+
+</body></html>
