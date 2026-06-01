@@ -129,6 +129,26 @@
             justify-content: center;
             text-decoration: none;
         }
+        .brand-lockup {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .brand-divider {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 0.75rem;
+            font-weight: 700;
+            line-height: 1;
+            text-transform: lowercase;
+        }
+        @media (min-width: 768px) {
+            .brand-lockup {
+                gap: 0.875rem;
+            }
+            .brand-divider {
+                font-size: 0.875rem;
+            }
+        }
         .glass-card {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(10px);
@@ -249,7 +269,11 @@
 <!-- Top Navigation -->
 <header class="bg-background/90 dark:bg-background/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant dark:border-outline-variant">
 <div class="flex justify-between items-center min-h-20 max-w-container mx-auto px-4 md:px-8 py-4 md:py-5 gap-4">
-<div class="font-headline-h1-mobile text-headline-h1-mobile text-on-background dark:text-on-background"><img alt="PaleoFX Logo" class="w-[150px] md:w-[165px] h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGWo2FNnZJK8LBwG9pkN9oz8H3diTeeWn0DVWl9XnurHknykMMNHdGOJHGwU_oZs9dAjUbcgB5XAp-39roo2yxDs0riuhPRQf3ieFW5J1gtabvYi8kosemIf2CV-qWVxrot4-39qkWp8Ni_PCXhDuc8zInZxtbpeHNu6TOMo2ZfRpJYggrULa_B3XbYcYLQTFGM2J3a5rJAqp_6KFexEFwzi9Mw8hDuZbQp8S3YB7XRZeGPvKr-Rb3qX3dMd5fJD3I5xjn9ZTE_LpRwA"></div>
+<div class="brand-lockup font-headline-h1-mobile text-headline-h1-mobile text-on-background dark:text-on-background">
+<img alt="PaleoFX Logo" class="w-[126px] md:w-[145px] h-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGWo2FNnZJK8LBwG9pkN9oz8H3diTeeWn0DVWl9XnurHknykMMNHdGOJHGwU_oZs9dAjUbcgB5XAp-39roo2yxDs0riuhPRQf3ieFW5J1gtabvYi8kosemIf2CV-qWVxrot4-39qkWp8Ni_PCXhDuc8zInZxtbpeHNu6TOMo2ZfRpJYggrULa_B3XbYcYLQTFGM2J3a5rJAqp_6KFexEFwzi9Mw8hDuZbQp8S3YB7XRZeGPvKr-Rb3qX3dMd5fJD3I5xjn9ZTE_LpRwA">
+<span aria-hidden="true" class="brand-divider">x</span>
+<img alt="Health Optimisation Summit Logo" class="w-[120px] md:w-[150px] h-auto object-contain shrink-0" src="assets/hos-logo-horizontal-white.png">
+</div>
 <nav class="flex gap-2 md:gap-8 items-center"><a class="cta-link cta-secondary font-button-text text-[10px] md:text-button-text text-white px-3 md:px-6 py-2 md:py-3 rounded-none uppercase" href="https://share-eu1.hsforms.com/1CSQ_mzSgQWWPiZOHTdqD1g2d8zkt">
   APPLY TO EXHIBIT
 </a>
@@ -523,7 +547,11 @@
 <!-- Footer -->
 <footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant">
 <div class="max-w-container mx-auto px-gutter py-section-v-desktop flex flex-col items-center text-center gap-8">
-<div class="font-headline-h2-mobile text-headline-h2-mobile text-on-surface dark:text-on-surface"><img alt="PaleoFX Logo" class="w-[220px] h-auto object-contain mx-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASrmHp1Hf6qzIhNwjbYExZLKXVFkFTjtPG5mYi42Dej5Fbm4Ht8atbwHZolR8Uy9NxtWSY6JslmLiA4EECk3soTdTn4KBdDRlpjorLBGUWrfWREZbxq0c_sUsU3v7NUGwXCMR_Hkg6kqwEerZMuC00-4g1hK6Nfa9o3IcPzKe-IXLGs-ypLmIpUqhbhNtQgWNNlf-UR9mCYq0sTW-SozEkQvZ5dAOFYL0kRN6y2xRHkSEsVUA5nGr2ls1NQ37YFFQVoNcEW_HQHg2LAA"></div>
+<div class="brand-lockup font-headline-h2-mobile text-headline-h2-mobile text-on-surface dark:text-on-surface justify-center">
+<img alt="PaleoFX Logo" class="w-[170px] md:w-[210px] h-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASrmHp1Hf6qzIhNwjbYExZLKXVFkFTjtPG5mYi42Dej5Fbm4Ht8atbwHZolR8Uy9NxtWSY6JslmLiA4EECk3soTdTn4KBdDRlpjorLBGUWrfWREZbxq0c_sUsU3v7NUGwXCMR_Hkg6kqwEerZMuC00-4g1hK6Nfa9o3IcPzKe-IXLGs-ypLmIpUqhbhNtQgWNNlf-UR9mCYq0sTW-SozEkQvZ5dAOFYL0kRN6y2xRHkSEsVUA5nGr2ls1NQ37YFFQVoNcEW_HQHg2LAA">
+<span aria-hidden="true" class="brand-divider">x</span>
+<img alt="Health Optimisation Summit Logo" class="w-[160px] md:w-[220px] h-auto object-contain shrink-0" src="assets/hos-logo-horizontal-white.png">
+</div>
 <nav class="flex flex-wrap justify-center gap-x-8 gap-y-4">
 <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-cta-orange transition-colors" href="/privacy-policy.html">Privacy Policy</a>
 <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-cta-orange transition-colors" href="/terms-and-conditions.html">Terms &amp; Conditions</a>
